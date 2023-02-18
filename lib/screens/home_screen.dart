@@ -28,7 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
             },
             blendMode: BlendMode.dstIn,
             child: Image.asset(
-              'assets/05.jpg',
+              'assets/003.jpg',
               height: mediaQuery.height,
               width: mediaQuery.width,
               fit: BoxFit.cover,

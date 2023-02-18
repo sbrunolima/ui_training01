@@ -18,7 +18,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
       body: SafeArea(
         child: Column(
           children: [
-            const SizedBox(height: 70),
+            const SizedBox(height: 40),
             Center(
               child: Text(
                 'Purchasing Plans',
@@ -40,7 +40,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ),
               ),
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 10),
             Container(
               width: mediaQuery.width - 30,
               child: Padding(

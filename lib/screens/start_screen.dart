@@ -14,7 +14,7 @@ class StartScreen extends StatefulWidget {
 }
 
 class _StartScreenState extends State<StartScreen> {
-  PageController _myPage = PageController(initialPage: 1);
+  PageController _myPage = PageController(initialPage: 0);
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +45,7 @@ class _StartScreenState extends State<StartScreen> {
         shape: const CircularNotchedRectangle(),
         notchMargin: 8,
         child: SizedBox(
-          height: 80,
+          height: 70,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -55,7 +55,7 @@ class _StartScreenState extends State<StartScreen> {
                     _myPage.jumpToPage(0);
                   });
                 },
-                child: MyIconButton(EneftyIcons.home_2_bold, true),
+                child: MyIconButton(EneftyIcons.home_2_outline, false),
               ),
               GestureDetector(
                 onTap: () {
@@ -67,7 +67,7 @@ class _StartScreenState extends State<StartScreen> {
               ),
               const SizedBox(width: 20),
               MyIconButton(EneftyIcons.heart_outline, false),
-              MyIconButton(EneftyIcons.profile_outline, false),
+              MyIconButton(EneftyIcons.profile_bold, true),
             ],
           ),
         ),
